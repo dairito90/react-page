@@ -1,3 +1,14 @@
+@keyframes slide-down-fade-in {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 body {
     font-family: -apple-system,
     BlinkMacSystemFont,
@@ -7,9 +18,17 @@ body {
     Ubuntu,
     Cantarell,
     Helvetica Neue, sans-serif;
-    background-image: url(http://study.com/cimages/course-image/introduction-to-business-certificate-course_129464_large.jpg);
+    background-image: url(http://www.setwalls.ru/pic/201304/1366x768/setwalls.ru-27439.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.title {
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    animation: slide-down-fade-in 1.5s 1s forwards;
+    text-align: center;
 }
 
 p {
@@ -22,6 +41,7 @@ p {
     Cantarell,
     Helvetica Neue, sans-serif;
     font-size: 20px;
+    color:white;
 }
 
 .column {
@@ -42,6 +62,17 @@ p {
 
 }
 
+.name {
+    border-radius: 3px;
+    margin: 20px 0;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    font-size: 16px;
+    width: 15%;
+    margin-right: 180px;
+}
+
+
 img {
     width:  80px;
 }
@@ -59,7 +90,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #d0021b;
+  color: black;
 }
 
 li {
@@ -99,7 +130,7 @@ li {
   border: none;
   font-size: 16px;
   border-radius: 3px;
-  width: 200px;
+  width: 100px;
   text-align: center;
   display: block;
   padding: 7px 0;

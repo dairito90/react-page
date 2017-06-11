@@ -7,16 +7,21 @@ class Contact extends React.Component {
     return (
 
         <form className='home-container' >
-<h1>LET'S KEEP IN TOUCH</h1>
+<h1 className='title'>Let's keep in touch</h1>
           <input
-            placeholder='your e-mail'
+               className='name'
+            placeholder='name'
+            type='text'
+          />
+          <input
+            placeholder='e-mail'
             type='text'
           />
           <button
             className='button'
             type='submit'
             >
-              Submit
+              Send
           </button>
         </form>
     );
